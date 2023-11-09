@@ -1,0 +1,36 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="singleNominaAlba:war exploded">
+    <output-path>$PROJECT_DIR$/target/singleNominaAlba-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>singleNominaAlba</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="singleNominaAlba" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.mariadb.jdbc:mariadb-java-client:3.1.4" />
+          <element id="library" level="project" name="Maven: com.github.waffle:waffle-jna:3.2.0" />
+          <element id="library" level="project" name="Maven: net.java.dev.jna:jna:5.12.1" />
+          <element id="library" level="project" name="Maven: net.java.dev.jna:jna-platform:5.12.1" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.36" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.36" />
+          <element id="library" level="project" name="Maven: com.github.ben-manes.caffeine:caffeine:2.9.3" />
+          <element id="library" level="project" name="Maven: com.google.errorprone:error_prone_annotations:2.10.0" />
+          <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.23.0" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.30" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/singleNominaAlba-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="singleNominaAlba/web/Web" />
+    </root>
+  </artifact>
+</component>
