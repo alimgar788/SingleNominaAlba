@@ -60,6 +60,9 @@ public class IndexServlet extends HttpServlet {
             case "login":
                 this.doGetLogin(request, response);
                 break;
+            case "cierraSesion":
+                this.doGetCierraSesion(request, response);
+                break;
             case "bienvenida":
             default:
                 this.doGetBienvenida(request, response);
@@ -145,6 +148,11 @@ public class IndexServlet extends HttpServlet {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
         request.setAttribute("opcion", "views/content/bienvenida.jsp");
         requestDispatcher.forward(request, response);
+    }
+    private void doGetCierraSesion(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        HttpSession sesion = request.getSession();
+        sesion.invalidate();
+        this.loginRedirect(request, response);
     }
 
     /**
