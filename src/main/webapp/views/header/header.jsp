@@ -31,7 +31,7 @@
                     salario</a>
                 <a href="index?opcion=actualiza" ${paginaActual == "actualiza" ? 'class="selected"' : ''}>Actualizar
                     datos</a>
-                <a href="index?opcion=cierraSesion" ${paginaActual == "cerrar" ? 'class="selected"' : ''}>Cerrar sesi&oacute;n</a>
+                <a href="index?opcion=cierraSesion" ${paginaActual == "cierraSesion" ? 'class="selected"' : ''}>Cerrar sesi&oacute;n</a>
 
             </c:if>
             <c:if test="${logueado == null || !logueado}">
